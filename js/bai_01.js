@@ -18,23 +18,18 @@
 */
 
 
-function CalcSalary() {
-    // 1. input
-    const SALARY_PER_DAY = 100000;
 
-    // 2.1 B1: Khai báo biến và get giá trị input từ user
-    var numberOfWorkingDay =document.getElementById("numberOfWorkingDay").value;
-    
-    // 2.2 B2: Lap cong thuc tinh toan
-    var salary = SALARY_PER_DAY * numberOfWorkingDay;
+// 1. input
+const SALARY_PER_DAY = 100000;
 
-    console.log("Salary:" + salary)
+// 2.1 B1: Khai báo biến và get giá trị input từ user
+var numberOfWorkingDay = 10;
 
-    // 3 Hiển thị lương
-    var outputDisplayELE = document.getElementById("output1");
-    outputDisplayELE.innerHTML = "Lương: " + salary;
-}
+// 2.2 B2: Lap cong thuc tinh toan
+var salary = SALARY_PER_DAY * numberOfWorkingDay;
 
-document.getElementById("btnBai01").onclick = CalcSalary;
+// 3 Hiển thị lương
+console.log("Salary: " + salary);
+
 
 
